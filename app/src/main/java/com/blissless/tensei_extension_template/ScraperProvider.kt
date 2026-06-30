@@ -13,7 +13,7 @@ import kotlin.collections.iterator
 class ScraperProvider : ContentProvider() {
 
     companion object {
-        const val AUTHORITY = "com.tensei.extension.template.provider"
+        const val AUTHORITY = "com.blissless.tensei_extension_template.provider"
         const val PATH_SCRAPE = "scrape"
         val CONTENT_URI: Uri = Uri.parse("content://$AUTHORITY/$PATH_SCRAPE")
         private const val CODE_SCRAPES = 1
