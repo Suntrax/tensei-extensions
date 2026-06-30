@@ -11,7 +11,7 @@
 
         <provider
             android:name=".ScraperProvider"
-            android:authorities="com.tensei.extension.template.provider"
+            android:authorities="com.blissless.tensei_extension_template.provider"
             android:exported="true" />
 
         <receiver
