@@ -5,7 +5,5 @@ import android.content.Context
 import android.content.Intent
 
 class ExtensionBeaconReceiver : BroadcastReceiver() {
-    override fun onReceive(context: Context?, intent: Intent?) {
-        // Exists only to be discoverable by the Main App
-    }
+    override fun onReceive(context: Context?, intent: Intent?) {}
 }

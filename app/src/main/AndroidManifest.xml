@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
     <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
+        android:name=".MiruroApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Tensei: TEMPLATE_NAME"
+        android:usesCleartextTraffic="true"
         android:theme="@android:style/Theme.NoDisplay">
-
         <provider
             android:name=".ScraperProvider"
             android:authorities="com.blissless.tensei_extension_template.provider"
             android:exported="true" />
-
         <receiver
             android:name=".ExtensionBeaconReceiver"
             android:exported="true">
@@ -21,6 +19,5 @@
                 <action android:name="com.blissless.animeclient.EXTENSION_BEACON" />
             </intent-filter>
         </receiver>
-
     </application>
 </manifest>
